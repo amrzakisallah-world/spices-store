@@ -1,6 +1,6 @@
 # Spices Store — متجر عمر و يونس للتوابل والبهارات
 
-تطبيق تجارة إلكترونية متكامل ونظام إدارة أعمال يومية لمتجر **عمر و يونس (Omar & Younis Spices)**، مبني بـ **React + TypeScript + Tailwind CSS + Express + SQLite**.
+تطبيق تجارة إلكترونية متكامل ونظام إدارة أعمال يومية لمتجر **توابل أصلي (Omar & Younis Spices)**، مبني بـ **React + TypeScript + Tailwind CSS + Express + SQLite**.
 
 ---
 
