@@ -2,7 +2,6 @@ name = "spices-store"
 main = "src/worker.js"
 compatibility_date = "2025-09-01"
 
-# Static frontend (storefront at /, admin at /admin/). The Worker runs first only for API and image paths.
 [assets]
 directory = "./public"
 binding = "ASSETS"
@@ -11,34 +10,9 @@ run_worker_first = ["/api/*", "/media/*"]
 [[d1_databases]]
 binding = "DB"
 database_name = "spices-store-db"
-database_id = "name = "spices-store"
-main = "src/worker.js"
-compatibility_date = "2025-09-01"
-
-# Static frontend (storefront at /, admin at /admin/). The Worker runs first only for API and image paths.
-[assets]
-directory = "./public"
-binding = "ASSETS"
-run_worker_first = ["/api/*", "/media/*"]
-
-[[d1_databases]]
-binding = "DB"
-database_name = "spices-store-db"
-database_id = "00000001-00000007-00005127-9608e632d16dc6931128c6305e3d45c1"   # printed by: npx wrangler d1 create spices-store-db
+database_id = "ada6b873-2d9f-4e96-869c-fb345f8138eb"
 migrations_dir = "migrations"
 
-# Product photos. Create with: npx wrangler r2 bucket create spices-store-images
 [[r2_buckets]]
 binding = "IMAGES"
 bucket_name = "spices-store-images"
-
-# Secret (never put in this file):  npx wrangler secret put SETUP_TOKEN
-"   # printed by: npx wrangler d1 create spices-store-db
-migrations_dir = "migrations"
-
-# Product photos. Create with: npx wrangler r2 bucket create spices-store-images
-[[r2_buckets]]
-binding = "IMAGES"
-bucket_name = "spices-store-images"
-
-# Secret (never put in this file):  npx wrangler secret put SETUP_TOKEN
