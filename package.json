@@ -1,0 +1,20 @@
+{
+  "name": "spices-store",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "متجر عمر و يونس للتوابل — Cloudflare Workers + D1 + R2",
+  "scripts": {
+    "dev": "wrangler dev",
+    "db:migrate:local": "wrangler d1 migrations apply spices-store-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply spices-store-db --remote",
+    "deploy": "wrangler deploy",
+    "test": "node --no-warnings test/run-tests.mjs",
+    "local": "node --no-warnings test/local-server.mjs",
+    "check": "node --check src/worker.js"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "engines": { "node": ">=20" }
+}
