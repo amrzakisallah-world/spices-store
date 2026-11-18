@@ -1,6 +1,0 @@
-{
-  "name": "Spices Store - عمر و يونس",
-  "description": "متجر عمر و يونس للتوابل والبهارات والأعشاب الطبيعية مع نظام متكامل لإدارة المبيعات والمخزون والموردين والأرباح.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
