@@ -12,7 +12,3 @@ binding = "DB"
 database_name = "spices-store-db"
 database_id = "ada6b873-2d9f-4e96-869c-fb345f8138eb"
 migrations_dir = "migrations"
-
-[[r2_buckets]]
-binding = "IMAGES"
-bucket_name = "spices-store-images"
